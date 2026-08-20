@@ -242,6 +242,21 @@ html{scroll-behavior:smooth}
 .go span{color:var(--blue);transition:transform .25s ease;display:inline-block}
 .log tbody tr:hover .go{color:var(--blue)}
 .log tbody tr:hover .go span{transform:translateX(4px)}
+/* translations of a project, offered quietly under its title.
+   .pj keeps title + languages in one flex item, so the stacked
+   mobile record still reads LABEL / value like every other row. */
+.log td .pj{display:block}
+.alt{display:block;margin-top:7px;font-size:11px;line-height:1.55;letter-spacing:.02em;
+  color:var(--muted)}
+.log td .alt a,
+.log tbody tr:hover td .alt a{color:var(--muted);font-weight:400;
+  border-bottom:1px solid var(--tint);padding-bottom:1px;margin-right:var(--f3);
+  white-space:nowrap;
+  font-family:Ubuntu,"Ubuntu Sans","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",
+    "Microsoft YaHei","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif}
+.log td .alt a:hover,
+.log tbody tr:hover td .alt a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+.log td .alt a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
 .act-note{margin-top:var(--f4);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 
 .cta{margin-top:var(--f6);background:var(--blue);color:#fff;border-radius:2px;
@@ -1067,7 +1082,7 @@ html{scroll-behavior:smooth}
           <td data-l="Link"><a class="go" target="_blank" href="/orakleinc/landing/lp-hemb-webinar-cme.html">View<span aria-hidden="true">&#8594;</span></a></td>
         </tr>
         <tr>
-          <td data-l="Project"><a href="#">Optimal treatment sequencing in advanced prostate cancer</a></td>
+          <td data-l="Project"><span class="pj"><a href="#">Optimal treatment sequencing in advanced prostate cancer</a><span class="alt">Also in <a hreflang="zh-Hans" lang="zh-Hans" href="/orakleinc/landing/lp-mcrpc-cn.html" target="_blank" rel="noopener">中文</a><a hreflang="fr" lang="fr" href="/orakleinc/landing/lp-mcrpc-fr.html" target="_blank" rel="noopener">Français</a><a hreflang="de" lang="de" href="/orakleinc/landing/lp-mcrpc-de.html" target="_blank" rel="noopener">Deutsch</a><a hreflang="ja" lang="ja" href="/orakleinc/landing/lp-mcrpc-jp.html" target="_blank" rel="noopener">日本語</a></span></span></td>
           <td data-l="Area"><span class="area">Oncology</span></td>
           <td data-l="Faculty">Boris Hadaschik MD, Elena Castro MD, Laurence Klotz, MD, Stefano Fanti MD and Wolfgang Fendler MD</td>
           <td data-l="Link"><a class="go" target="_blank" href="/orakleinc/landing/lp-mcrpc.html">View<span aria-hidden="true">&#8594;</span></a></td>
