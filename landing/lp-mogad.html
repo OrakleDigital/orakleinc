@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Maya R. &#183; Niemann-Pick type C case &#183; Orakle</title>
-<meta name="description" content="A 4-year-old girl with hypotonia, developmental delay and splenomegaly, and none of the classical neurological signs. One case, one diagnosis. 1.00 AMA PRA Category 1 Credit(s), AKH Inc.">
-<meta property="og:title" content="Maya R. &#183; Niemann-Pick type C case &#183; Orakle">
-<meta property="og:description" content="A 4-year-old girl with hypotonia, developmental delay and splenomegaly, and none of the classical neurological signs. One case, one diagnosis. 1.00 AMA PRA Category 1 Credit(s), AKH Inc.">
+<title>Jane T &#183; Relapsing neurological symptoms &#183; MOGAD &#183; Orakle</title>
+<meta name="description" content="A 51-year-old woman with relapsing brainstem symptoms, a childhood episode nobody revisited, and a diagnosis that did not fit. One case, one diagnosis. Initiated and funded by UCB.">
+<meta property="og:title" content="Jane T &#183; Relapsing neurological symptoms &#183; MOGAD &#183; Orakle">
+<meta property="og:description" content="A 51-year-old woman with relapsing brainstem symptoms, a childhood episode nobody revisited, and a diagnosis that did not fit. One case, one diagnosis. Initiated and funded by UCB.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Maya R. &#183; Niemann-Pick type C case &#183; Orakle">
-<meta name="twitter:description" content="A 4-year-old girl with hypotonia, developmental delay and splenomegaly, and none of the classical neurological signs. One case, one diagnosis. 1.00 AMA PRA Category 1 Credit(s), AKH Inc.">
+<meta name="twitter:title" content="Jane T &#183; Relapsing neurological symptoms &#183; MOGAD &#183; Orakle">
+<meta name="twitter:description" content="A 51-year-old woman with relapsing brainstem symptoms, a childhood episode nobody revisited, and a diagnosis that did not fit. One case, one diagnosis. Initiated and funded by UCB.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#215DD5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%2268.0%20-8.0%20224%20224%22%20width=%22224%22%20height=%22224%22%20role=%22img%22%20aria-label=%22Orakle%22%3E%3Cstyle%3E%40media(prefers-color-scheme:dark)%7B.k%7Bstroke:#FFFFFF%7D.b%7Bstroke:#6E9BEE%7D%7D%3C/style%3E%3Cpath%20class=%22k%22%20d=%22M%2076.0%20104.0%20C%20121.75999999999999%2041.52%20238.24%2041.52%20284.0%20104.0%20C%20238.24%20166.48%20121.75999999999999%20166.48%2076.0%20104.0%20Z%22%20fill=%22none%22%20stroke=%22#1B2733%22%20stroke-width=%2213%22%20stroke-linejoin=%22round%22/%3E%3Ccircle%20class=%22b%22%20cx=%22180.0%22%20cy=%22104.0%22%20r=%2240%22%20fill=%22none%22%20stroke=%22#215DD5%22%20stroke-width=%2211%22/%3E%3Ccircle%20cx=%22180.0%22%20cy=%22104.0%22%20r=%2222%22%20fill=%22#F1C234%22/%3E%3C/svg%3E" type="image/svg+xml">
@@ -112,8 +112,8 @@ svg.ar{width:1em;height:1em;flex:0 0 auto;transition:transform .25s ease}
 /* ---------------- main ---------------- */
 .mn{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));
   gap:clamp(var(--f3),3vh,var(--f5)) clamp(var(--f2),1.6vw,var(--f3));min-height:0}
-.col-a{grid-column:1 / span 12;display:grid;min-height:0;min-width:0;align-content:center}
-.col-b{grid-column:14 / span 13;display:grid;grid-template-rows:auto auto;
+.col-a{grid-column:1 / span 13;display:grid;min-height:0;min-width:0;align-content:center}
+.col-b{grid-column:15 / span 12;display:grid;grid-template-rows:auto auto;
   align-content:center;gap:clamp(var(--f2),1.6vh,var(--f3));min-height:0}
 
 /* five panels in one cell: the container is as tall as the tallest stage,
@@ -206,10 +206,8 @@ html:not(.js) .bars .fill{width:var(--w)}
 .ev-list .rf{font-style:normal;font-size:var(--fl);letter-spacing:.12em;color:var(--blue);font-weight:500;
   font-variant-numeric:tabular-nums;white-space:nowrap}
 
-/* ---------------- chart: the diagnostic ledger -------------------------------
-   No time series exists in this case, so the panel carries the workup itself:
-   every investigation ordered, what it returned, and what it did to the
-   differential. Drawn in HTML, so every label keeps the page's body size.   */
+/* ---------------- chart: the clock, the titre and the sampling window -------
+   HTML, not SVG, so every label keeps the page's body size.               */
 sub,sup{line-height:0;font-size:.74em}
 .chartcard{background:var(--wash);border-radius:2px;display:grid;grid-template-rows:auto auto;
   gap:clamp(6px,1.3vh,var(--f3));padding:clamp(10px,1.7vh,var(--f3));min-height:0}
@@ -219,37 +217,77 @@ sub,sup{line-height:0;font-size:.74em}
 .chartcard .lbl em{font-style:normal;text-transform:none;letter-spacing:.02em;color:var(--muted)}
 .readout dd small{margin-left:.28em}
 
-.ledger{list-style:none;display:grid;gap:clamp(2px,.6vh,8px);min-width:0}
-.ledger li{display:grid;grid-template-columns:max-content minmax(0,1fr) max-content;
-  gap:clamp(var(--f2),1.3vw,var(--f3));align-items:center;min-width:0;
-  padding:clamp(2px,.5vh,6px) 0;border-top:1px solid var(--tint)}
-.ledger li > *{min-width:0}
-.ledger .tn{font-size:var(--fs);line-height:1.2;color:var(--body);white-space:nowrap}
-.ledger .rs{font-size:var(--fs);font-weight:300;line-height:1.3;color:var(--ink)}
-.ledger .vc{font-style:normal;font-size:var(--fl);letter-spacing:.13em;text-transform:uppercase;
-  white-space:nowrap;font-weight:500;border-radius:2px;padding:2px 7px;border:1px solid var(--mid);
-  color:var(--muted)}
-.ledger .vc.c-out{color:var(--deep);border-color:var(--mid)}
-.ledger .vc.c-npc{color:var(--ink);border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--gold)}
-.ledger .vc.c-gen{color:#fff;background:var(--ink);border-color:var(--ink)}
-.ctl{display:grid;grid-template-columns:max-content minmax(0,1fr) max-content;
-  gap:6px;align-items:center;font-size:var(--fl);color:var(--muted);line-height:1.3}
-.ctl b{font-weight:400;order:1;white-space:nowrap}
-.ctl .cb{order:2;height:7px;background:var(--mid);border-radius:1px;display:block;
-  justify-self:start}
-.ctl em{order:3;font-style:normal;color:var(--ink);font-weight:500;white-space:nowrap}
-.ledger .rs .ctl + .ctl{margin-top:3px}
+.px{display:grid;gap:clamp(3px,.8vh,9px);min-width:0}
+.pxl{font-size:var(--fl);letter-spacing:.16em;text-transform:uppercase;color:var(--blue);
+  display:flex;flex-wrap:wrap;gap:2px var(--f2);align-items:baseline}
+.pxl em{font-style:normal;text-transform:none;letter-spacing:.02em;color:var(--muted)}
+.pxl.l2{padding-top:clamp(3px,.9vh,10px);border-top:1px solid var(--tint)}
+.tlnotes{list-style:none;display:grid;gap:clamp(1px,.4vh,5px)}
+.tlnotes li{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:var(--f2);
+  font-size:var(--fs);line-height:1.35;color:var(--body);min-width:0}
+.tlnotes li > *{min-width:0}
+.tlnotes .w{font-style:normal;color:var(--blue);font-weight:500;white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+
+.ztrack{position:relative;display:block;height:clamp(17px,2.7vh,25px);min-width:0}
+.zn{position:absolute;top:0;bottom:0;font-style:normal;font-size:var(--fl);letter-spacing:.06em;
+  display:flex;align-items:center;justify-content:center;border:1px solid var(--mid);
+  margin-left:-1px;white-space:nowrap;overflow:hidden}
+.zn.z1{color:var(--muted);background:var(--paper)}
+.zn.z2{color:var(--body);background:var(--paper);
+  background-image:repeating-linear-gradient(45deg,var(--tint) 0 5px,transparent 5px 10px)}
+.zn.z3{color:#fff;background:var(--blue);border-color:var(--blue);font-weight:500}
+.zmk{position:absolute;top:-4px;bottom:-4px;width:3px;margin-left:-1.5px;background:var(--gold);
+  border-left:1px solid var(--ink);border-right:1px solid var(--ink)}
+.zval{font-size:var(--fs);color:var(--body);display:flex;flex-wrap:wrap;gap:2px var(--f2);
+  align-items:baseline;line-height:1.3}
+.zval b{font-weight:500;color:var(--ink);font-size:calc(var(--fs) * 1.2)}
+.zval em{font-style:normal;font-weight:500;color:var(--ink);
+  border-bottom:2px solid var(--gold);padding-bottom:1px}
+.zval span{font-size:var(--fl);color:var(--muted)}
+
+.mtrack{position:relative;display:block;height:clamp(13px,2vh,19px);min-width:0}
+.mline{position:absolute;top:50%;height:3px;margin-top:-1.5px;border-radius:1px;
+  background-image:linear-gradient(90deg,var(--blue),var(--mid))}
+.mk{position:absolute;top:50%;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--mid)}
+.mk.jane{background:var(--gold);border-color:var(--ink);width:13px;height:13px;
+  margin:-6.5px 0 0 -6.5px}
+.mlabs{position:relative;display:block;min-width:0;height:calc(var(--fl) * 2.9)}
+.ml{position:absolute;font-style:normal;font-size:var(--fl);color:var(--muted);white-space:nowrap;
+  transform:translateX(-50%)}
+.ml.m1{top:0}
+.ml.m2{top:0;transform:translateX(-92%)}
+.ml.jane{top:calc(var(--fl) * 1.6);color:var(--ink);font-weight:500}
+.mtax{position:relative;display:block;height:calc(var(--fl) * 1.5);min-width:0;
+  border-top:1px solid var(--tint);padding-top:2px}
+.mtax > i{position:absolute;top:2px;transform:translateX(-50%);font-style:normal;
+  font-size:var(--fl);color:var(--muted);white-space:nowrap}
+.mtax > i:first-child{transform:translateX(-8%)}
+.mtax > i:last-child{transform:translateX(-92%)}
 
 /* what is on the panel at each stage */
-.ledger .rs,.ledger .vc{opacity:0;transition:opacity calc(var(--u) * 2) ease}
-body[data-stage="2"] .ledger .rs,body[data-stage="3"] .ledger .rs,
-body[data-stage="4"] .ledger .rs,body[data-stage="5"] .ledger .rs,
-body[data-stage="2"] .ledger .vc,body[data-stage="3"] .ledger .vc,
-body[data-stage="4"] .ledger .vc,body[data-stage="5"] .ledger .vc{opacity:1}
-.ledger .tn{color:var(--muted);transition:color calc(var(--u) * 2) ease}
-body[data-stage="2"] .ledger .tn,body[data-stage="3"] .ledger .tn,
-body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--body)}
-
+.tlnotes li,.zn,.zmk,.zval,.mk,.mline,.ml,.mtax > i{opacity:0;
+  transition:opacity calc(var(--u) * 2) ease}
+body[data-stage="1"] .tlnotes .e-a,body[data-stage="1"] .tlnotes .e-b,
+body[data-stage="1"] .zn,body[data-stage="1"] .mline,
+body[data-stage="1"] .mtax > i{opacity:1}
+body[data-stage="2"] .tlnotes li,body[data-stage="3"] .tlnotes li,
+body[data-stage="4"] .tlnotes li,body[data-stage="5"] .tlnotes li,
+body[data-stage="2"] .zn,body[data-stage="3"] .zn,
+body[data-stage="4"] .zn,body[data-stage="5"] .zn,
+body[data-stage="2"] .zmk,body[data-stage="3"] .zmk,
+body[data-stage="4"] .zmk,body[data-stage="5"] .zmk,
+body[data-stage="2"] .zval,body[data-stage="3"] .zval,
+body[data-stage="4"] .zval,body[data-stage="5"] .zval,
+body[data-stage="2"] .mk,body[data-stage="3"] .mk,
+body[data-stage="4"] .mk,body[data-stage="5"] .mk,
+body[data-stage="2"] .mline,body[data-stage="3"] .mline,
+body[data-stage="4"] .mline,body[data-stage="5"] .mline,
+body[data-stage="2"] .ml,body[data-stage="3"] .ml,
+body[data-stage="4"] .ml,body[data-stage="5"] .ml,
+body[data-stage="2"] .mtax > i,body[data-stage="3"] .mtax > i,
+body[data-stage="4"] .mtax > i,body[data-stage="5"] .mtax > i{opacity:1}
 /* ---------------- the verdict ---------------- */
 .verdict{list-style:none;display:grid;gap:clamp(2px,.5vh,6px);margin-top:clamp(6px,1.2vh,var(--f3))}
 .verdict li{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:var(--f2);
@@ -265,6 +303,7 @@ body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--bo
 .verdict .vc svg{width:.95em;height:.95em;flex:0 0 auto}
 .verdict .vc.ok{color:var(--deep)}
 .verdict .vc.no{color:var(--muted)}
+.verdict .vc.part{color:var(--ink)}
 .verdict .why{display:block;font-size:var(--fs);font-weight:300;line-height:1.35;color:var(--body)}
 .verdict li[data-best]{border-left:2px solid var(--gold);padding-left:var(--f2)}
 .verdict li[data-you] .k{background:var(--blue);color:#fff;border-color:var(--blue)}
@@ -287,8 +326,6 @@ body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--bo
   .opts{gap:1px}
   .opt{padding:2px var(--f2)}
   .opt .x{line-height:1.24}
-  .ledger{gap:1px}
-  .ledger li{padding:1px 0}
   .cta-row{margin-top:clamp(7px,1.2vh,var(--f4))}
   .shell{padding-bottom:clamp(10px,1.7vh,var(--f3))}
 }
@@ -343,8 +380,8 @@ body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--bo
 /* narrow laptops: give the case column the width it needs so the copy
    loses lines rather than the page losing its single screen */
 @media (min-width:1100px) and (max-width:1360px){
-  .col-a{grid-column:1 / span 13}
-  .col-b{grid-column:15 / span 12}
+  .col-a{grid-column:1 / span 14}
+  .col-b{grid-column:16 / span 11}
 }
 
 /* ---------------- reflow: every stage open, ordinary scrolling ------- */
@@ -358,8 +395,7 @@ body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--bo
   .stages{gap:var(--f5)}
   html.js .stage,.stage{grid-area:auto;opacity:1 !important;visibility:visible !important;
     pointer-events:auto !important;transform:none !important}
-  .ledger .rs,.ledger .vc{opacity:1}
-  .ledger .tn{color:var(--body)}
+  .tlnotes li,.zn,.zmk,.zval,.mk,.mline,.ml,.mtax > i{opacity:1}
   html.js .bars .fill{width:var(--w)}
   .legal details[open]{max-height:none}
   .nextrow{display:none}
@@ -374,8 +410,9 @@ body[data-stage="4"] .ledger .tn,body[data-stage="5"] .ledger .tn{color:var(--bo
 html:not(.js) .rail,html:not(.js) .nextrow{display:none}
 html:not(.js) .stages{gap:var(--f5)}
 html:not(.js) .stage{grid-area:auto}
-html:not(.js) .ledger .rs,html:not(.js) .ledger .vc{opacity:1}
-html:not(.js) .ledger .tn{color:var(--body)}
+html:not(.js) .tlnotes li,html:not(.js) .zn,html:not(.js) .zmk,
+html:not(.js) .zval,html:not(.js) .mk,html:not(.js) .mline,
+html:not(.js) .ml,html:not(.js) .mtax > i{opacity:1}
 html:not(.js) .shell{min-height:0;grid-template-rows:none}
 
 /* =====================================================================
@@ -406,8 +443,8 @@ html:not(.js) .shell{min-height:0;grid-template-rows:none}
   <header class="hd r" style="--n:0">
     <a class="brand" href="#" aria-label="Orakle, home"><svg class="eyemark" viewBox="70 12 220 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="olid"><path d="M 76.0 104.0 C 121.75999999999999 41.52 238.24 41.52 284.0 104.0 C 238.24 166.48 121.75999999999999 166.48 76.0 104.0 Z"/></clipPath></defs><g class="eye"><line class="ls" x1="104.6" y1="62.6" x2="92.1" y2="39.8"/><line class="ls" x1="140.9" y1="48.7" x2="134.9" y2="23.4"/><line class="ls" x1="180.0" y1="44.1" x2="180.0" y2="18.1"/><line class="ls" x1="219.1" y1="48.7" x2="225.1" y2="23.4"/><line class="ls" x1="255.4" y1="62.6" x2="267.9" y2="39.8"/><path class="lid" d="M 76.0 104.0 C 121.75999999999999 41.52 238.24 41.52 284.0 104.0 C 238.24 166.48 121.75999999999999 166.48 76.0 104.0 Z"/><g clip-path="url(#olid)"><g class="iris"><circle class="lrg" cx="180.0" cy="104.0" r="34"/><circle class="lrg b" cx="180.0" cy="104.0" r="21"/><circle class="pupil" cx="180.0" cy="104.0" r="13"/></g></g></g></svg><svg class="wmk" viewBox="66.11 181.4 226.6 31.4" aria-hidden="true" preserveAspectRatio="xMinYMid meet"><g fill="#1B2733"><g transform="translate(66.11 212) scale(0.04400 -0.04400)"><path d="M211 347Q211 296 223.5 255.0Q236 214 259.5 184.5Q283 155 317.0 139.0Q351 123 395 123Q438 123 472.5 139.0Q507 155 530.5 184.5Q554 214 566.5 255.0Q579 296 579 347Q579 398 566.5 439.5Q554 481 530.5 510.5Q507 540 472.5 556.0Q438 572 395 572Q351 572 317.0 555.5Q283 539 259.5 509.5Q236 480 223.5 438.5Q211 397 211 347ZM740 347Q740 258 713.5 190.5Q687 123 641.0 77.5Q595 32 531.5 9.0Q468 -14 395 -14Q324 -14 261.0 9.0Q198 32 151.0 77.5Q104 123 77.0 190.5Q50 258 50 347Q50 436 78.0 503.5Q106 571 153.5 617.0Q201 663 263.5 686.0Q326 709 395 709Q466 709 529.0 686.0Q592 663 639.0 617.0Q686 571 713.0 503.5Q740 436 740 347Z"/></g><g transform="translate(107.47 212) scale(0.04400 -0.04400)"><path d="M283 701Q439 701 522.0 645.5Q605 590 605 473Q605 400 571.5 354.5Q538 309 475 283Q496 257 519.0 223.5Q542 190 564.5 153.5Q587 117 608.0 77.5Q629 38 647 0H472Q453 34 433.5 69.0Q414 104 393.5 137.0Q373 170 353.0 199.5Q333 229 313 253H236V0H80V683Q131 693 185.5 697.0Q240 701 283 701ZM292 568Q275 568 261.5 567.0Q248 566 236 565V377H280Q368 377 406.0 399.0Q444 421 444 474Q444 525 405.5 546.5Q367 568 292 568Z"/></g><g transform="translate(143.41 212) scale(0.04400 -0.04400)"><path d="M544 0Q533 36 519.5 74.0Q506 112 493 150H223Q210 112 196.5 74.0Q183 36 172 0H10Q49 112 84.0 207.0Q119 302 152.5 386.0Q186 470 218.5 545.5Q251 621 286 693H435Q469 621 502.0 545.5Q535 470 568.5 386.0Q602 302 637.0 207.0Q672 112 711 0ZM357 536Q352 521 342.0 495.0Q332 469 319.0 435.0Q306 401 290.5 360.0Q275 319 259 274H456Q440 319 425.0 360.0Q410 401 396.5 435.0Q383 469 373.0 495.0Q363 521 357 536Z"/></g><g transform="translate(181.74 212) scale(0.04400 -0.04400)"><path d="M489 0Q468 34 439.5 73.5Q411 113 377.5 152.5Q344 192 308.0 228.5Q272 265 236 293V0H80V693H236V431Q297 495 358.5 564.5Q420 634 473 693H658Q587 609 515.5 531.0Q444 453 365 374Q448 305 525.5 210.0Q603 115 674 0Z"/></g><g transform="translate(218.43 212) scale(0.04400 -0.04400)"><path d="M543 134V0H80V693H236V134Z"/></g><g transform="translate(249.81 212) scale(0.04400 -0.04400)"><path d="M80 0V693H548V562H236V426H513V298H236V131H571V0Z"/></g><g fill="#215DD5" transform="translate(283.07 212) scale(0.04400 -0.04400)"><path d="M216 79Q216 34 187.5 10.5Q159 -13 123 -13Q87 -13 58.5 10.5Q30 34 30 79Q30 124 58.5 147.5Q87 171 123 171Q159 171 187.5 147.5Q216 124 216 79Z"/></g></g></svg></a>
     <div class="hdr-right">
-      <p class="spec">Earn &#183; 1.00 AMA PRA Category 1 Credit(s)&#8482;</p>
-      <a class="btn" href="https://ec.orakle.digital/search?q=Zevra" target="_blank" rel="noopener">Start case <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p class="spec">Educational case &#183; funded by UCB</p>
+      <a class="btn" href="https://ec.orakle.digital/cases/cmd399vgevevq07vy0qqbwqre" target="_blank" rel="noopener">Start case <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </header>
 
@@ -424,245 +461,200 @@ html:not(.js) .shell{min-height:0;grid-template-rows:none}
       <div class="stages">
       <article class="stage" id="s0" role="tabpanel" aria-labelledby="tab0" data-on>
         <p class="eyebrow">Case &#183; Presentation</p>
-        <h1>&#8220;I&#8217;m worried about <em>Maya&#8217;s clumsiness</em>.&#8221;</h1>
-        <p class="lede">Maya R is 4, and presents with delayed motor and language development. Born at
-          term after an uncomplicated pregnancy, she had <b>feeding difficulties and prolonged jaundice
-          in infancy</b>, both of which resolved without a definitive diagnosis.</p>
-        <p class="lede">She has continued to acquire milestones, but more slowly than expected. She
-          walked independently at about 20 months and still has difficulty running, climbing stairs and
-          joining age&#8209;appropriate activity. Vocabulary and sentence formation lag too. No seizures,
-          no abnormal movements, no behavioural disturbance, <b>and no loss of skills already
-          acquired</b>.</p>
-        <p class="lede">Examination shows generalized hypotonia and mild developmental delay, with
-          <b>splenomegaly and possible mild hepatomegaly</b>. Strength is preserved and reflexes normal.
-          No cerebellar signs, no abnormal eye movements, no dysarthria, no focal deficit. There is no
-          known family history of neurodegenerative, developmental or inherited metabolic disease, and
-          no consanguinity.</p>
+        <h1>At seven, fever and blindness. <u>Today she finds it hard to speak and walk.</u></h1>
+        <p class="lede">Jane T is 51, with no significant medical history and an active life &#8212;
+          gardening, community volunteer work. Eight months ago she came to her primary care physician
+          with <b>severe fatigue, left&#8209;sided facial weakness and bilateral sensorineural hearing
+          loss</b>, which progressed to the point of needing hearing aids.</p>
+        <p class="lede">Five days of intravenous steroids improved her symptoms markedly over several
+          weeks, and she was diagnosed with <b>CLIPPERS</b>. A month later, while tapering, everything
+          came back worse: progressive leg weakness, <b>right&#8209;sided appendicular ataxia and
+          frequent falls</b>, increasing difficulty speaking, tingling in the head and neck, persistent
+          headaches, bilateral blurry vision.</p>
+        <p class="lede">On examination she is alert but fatigued, with left&#8209;sided facial weakness,
+          slurred speech, <b>lower extremity weakness 3/5</b>, right&#8209;sided ataxia, sensory
+          deficits in the head and neck, brisk reflexes and <b>bilateral Babinski signs</b>. Her gait
+          is severely unstable.</p>
         <dl class="facts">
-          <div><dt>Walked independently</dt><dd>20 <small>months</small></dd></div>
-          <div><dt>Height &#183; weight</dt><dd>102 <small>cm</small> &#183; 16 <small>kg</small></dd></div>
+          <div><dt>Age at the first event</dt><dd>7 <small>years</small></dd></div>
+          <div><dt>Since this episode began</dt><dd>8 <small>months</small></dd></div>
         </dl>
         <p class="cta-row nextrow"><button class="btn" type="button" data-go="1">Order the workup <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><span class="hint">or use the arrow keys</span></p>
       </article>
       <article class="stage" id="s1" role="tabpanel" aria-labelledby="tab1">
         <p class="eyebrow">Case &#183; Workup</p>
-        <h1>The brain MRI is normal. <u>The bile acids are not.</u></h1>
-        <p class="lede">Plasma bile acid metabolite testing shows <b>markedly elevated
-          3&#946;,5&#945;,6&#946;&#8209;trihydroxy&#8209;cholanoyl&#8209;glycine (TCG)</b>, consistent
-          with impaired intracellular cholesterol trafficking. Whole exome sequencing identifies two
-          pathogenic <i>NPC1</i> variants: p.Ala1035Val (c.3104C&gt;T) and p.Ile1061Thr (c.3182T&gt;C).</p>
-        <p class="lede">Everything else narrows rather than names. Full blood count and lipids are within
-          range; liver function shows only mild transaminase elevation; brain MRI is normal with
-          <b>no cerebellar atrophy</b>; urinary glycosaminoglycans are normal, making a
-          mucopolysaccharidosis less likely; and the lysosomal enzyme panel finds no deficiency.</p>
-        <p class="lede">Abdominal ultrasound confirms the examination finding: mild hepatosplenomegaly,
-          liver at the 92nd centile for age and spleen at the 95th, with no focal lesions.</p>
-        <dl class="facts">
-          <div><dt>TCG</dt><dd class="txt">Markedly elevated</dd></div>
-          <div><dt><i>NPC1</i> variants</dt><dd>2 <small>pathogenic</small></dd></div>
-        </dl>
+        <h1>MOG&#8209;IgG 1:100. <em>Clear positive.</em></h1>
+        <p class="lede">Serum antibody testing returns <b>MOG&#8209;IgG clear positive at a titre of
+          1:100 on a cell&#8209;based assay</b>, with <b>serum AQP4&#8209;IgG negative</b>. Cell&#8209;based
+          assays are the preferred method and serum the recommended specimen; live assays offer the
+          highest sensitivity and specificity, fixed assays are acceptable alternatives, and ELISA is
+          not recommended (Banwell, et al. 2023).</p>
+        <p class="lede">Today&#8217;s MRI shows an <b>overall decrease in the prominence</b> of the
+          lesions seen six months ago, the brainstem enhancement has <b>resolved</b>, and no new areas
+          of enhancement have developed. Those earlier images showed multiple areas of increased
+          T2/FLAIR signal in the <b>subcortical white matter, midbrain and pons</b>, some enhancing.</p>
+        <p class="lede">CSF shows mild lymphocytic pleocytosis and elevated protein, <b>without
+          oligoclonal bands</b>. The autoimmune panel, infectious testing &#8212; including HIV,
+          syphilis and Lyme &#8212; and the paraneoplastic antibody panel were all negative.</p>
         <p class="cta-row nextrow"><button class="btn" type="button" data-go="2">Go to the decision <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></p>
       </article>
       <article class="stage" id="s2" role="tabpanel" aria-labelledby="tab2">
         <p class="eyebrow">Case &#183; Decision</p>
         <h1>What is the <em>diagnosis</em>?</h1>
-        <p class="lede">Developmental delay and visceral involvement together, in a 4&#8209;year&#8209;old
-          with none of the classical neurological signs. <b>Choose one.</b></p>
+        <p class="lede">Relapsing brainstem and cerebellar deficits in a woman of 51, MOG&#8209;IgG
+          clear positive, AQP4&#8209;IgG negative, no oligoclonal bands, lesions that resolved.
+          <b>Choose one.</b></p>
         <ul class="opts" role="radiogroup" aria-label="Diagnosis">
-        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="A" id="optA" tabindex="0"><i class="k">A</i><span class="x">Niemann&#8209;Pick disease type C</span><span class="tickbox" aria-hidden="true"></span></button></li>
-        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="B" id="optB" tabindex="-1"><i class="k">B</i><span class="x">Gaucher disease type 3</span><span class="tickbox" aria-hidden="true"></span></button></li>
-        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="C" id="optC" tabindex="-1"><i class="k">C</i><span class="x">Sanfilippo syndrome</span><span class="tickbox" aria-hidden="true"></span></button></li>
-        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="D" id="optD" tabindex="-1"><i class="k">D</i><span class="x">Ataxia&#8209;telangiectasia</span><span class="tickbox" aria-hidden="true"></span></button></li>
-        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="E" id="optE" tabindex="-1"><i class="k">E</i><span class="x">Juvenile neuronal ceroid lipofuscinosis</span><span class="tickbox" aria-hidden="true"></span></button></li>
+        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="A" id="optA" tabindex="0"><i class="k">A</i><span class="x">CLIPPERS</span><span class="tickbox" aria-hidden="true"></span></button></li>
+        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="B" id="optB" tabindex="-1"><i class="k">B</i><span class="x">Multiple sclerosis</span><span class="tickbox" aria-hidden="true"></span></button></li>
+        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="C" id="optC" tabindex="-1"><i class="k">C</i><span class="x">NMOSD</span><span class="tickbox" aria-hidden="true"></span></button></li>
+        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="D" id="optD" tabindex="-1"><i class="k">D</i><span class="x">MOGAD</span><span class="tickbox" aria-hidden="true"></span></button></li>
+        <li><button class="opt" type="button" role="radio" aria-checked="false" data-k="E" id="optE" tabindex="-1"><i class="k">E</i><span class="x">Sarcoidosis</span><span class="tickbox" aria-hidden="true"></span></button></li>
         </ul>
         <p class="cta-row commitrow"><button class="btn" type="button" id="commit" disabled>Lock in my answer <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           <span class="hint" id="commithint">Select a diagnosis to continue</span></p>
       </article>
       <article class="stage" id="s3" role="tabpanel" aria-labelledby="tab3">
         <p class="eyebrow">Case &#183; Verdict</p>
-        <h1>Visceral disease <u>plus</u> developmental delay is the signal.</h1>
+        <h1>The lesions cleared. <u>MS lesions do not.</u></h1>
         <ul class="verdict">
-        <li data-k="A" data-v="ok" data-best><i class="k">A</i><span><span class="hd2"><span class="nm">Niemann&#8209;Pick disease type C</span><i class="vc ok"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.4 7.4 5.6 10.6 11.6 3.9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Correct</i></span><span class="why">Developmental delay, hypotonia, hepatosplenomegaly and prolonged neonatal jaundice, with markedly elevated TCG and two pathogenic <i>NPC1</i> variants. <b>The absence of cerebellar signs, vertical gaze abnormalities or neurodegenerative findings does not exclude NPC</b> in a young child who may present with developmental and visceral features first.</span></span></li>
-        <li data-k="B" data-v="no"><i class="k">B</i><span><span class="hd2"><span class="nm">Gaucher disease type 3</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">Both can present with hepatosplenomegaly and childhood&#8209;onset neurological change, but GD3 is associated with glucocerebrosidase deficiency, <i>GBA1</i> variants and elevated lyso&#8209;GL1 &#8212; and the lysosomal enzyme panel found no deficiency.</span></span></li>
-        <li data-k="C" data-v="no"><i class="k">C</i><span><span class="hd2"><span class="nm">Sanfilippo syndrome</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">Typically presents between 2 and 6 with behavioural disturbance, hyperactivity, sleep dysfunction and regression as the dominant early features. None are present, and <b>urinary GAGs are normal</b>.</span></span></li>
-        <li data-k="D" data-v="no"><i class="k">D</i><span><span class="hd2"><span class="nm">Ataxia&#8209;telangiectasia</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">Caused by <i>ATM</i> variants and typically associated with elevated alpha&#8209;fetoprotein, oculocutaneous telangiectasias, recurrent sinopulmonary infections and immunodeficiency &#8212; <b>none of which are present here</b>.</span></span></li>
-        <li data-k="E" data-v="no"><i class="k">E</i><span><span class="hd2"><span class="nm">Juvenile neuronal ceroid lipofuscinosis</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">Batten disease commonly presents with early progressive vision loss, retinal degeneration and seizures, <b>all absent in this case</b>.</span></span></li>
+        <li data-k="A" data-v="no"><i class="k">A</i><span><span class="hd2"><span class="nm">CLIPPERS</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why"><b>The label she arrived with.</b> Her initial steroid response fits, but CLIPPERS is confined to the pons and adjacent brainstem, while <b>her lesions extend into the subcortical white matter and midbrain</b>. MOG&#8209;IgG positivity is not seen in CLIPPERS, and improvement followed by worsening suggests a relapsing demyelinating disorder (Tobin WO, et al. 2017).</span></span></li>
+        <li data-k="B" data-v="no"><i class="k">B</i><span><span class="hd2"><span class="nm">Multiple sclerosis</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">MS does not typically present with MOG&#8209;IgG. <b>Her lesions resolved over time</b>, where MS lesions usually persist and accumulate, and the <b>absence of CSF oligoclonal bands</b> &#8212; common in MS, rare in MOGAD &#8212; points away (Flanagan, et al. 2024).</span></span></li>
+        <li data-k="C" data-v="no"><i class="k">C</i><span><span class="hd2"><span class="nm">NMOSD</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">MOGAD and AQP4&#8209;IgG NMOSD separate on serum biomarkers; dual positivity is extremely rare. <b>She is AQP4&#8209;IgG negative.</b> NMOSD typically brings severe optic neuritis and longitudinally extensive transverse myelitis with irreversible damage, not brainstem predominance with lesion resolution (Flanagan, et al. 2024).</span></span></li>
+        <li data-k="D" data-v="ok" data-best><i class="k">D</i><span><span class="hd2"><span class="nm">MOGAD</span><i class="vc ok"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.4 7.4 5.6 10.6 11.6 3.9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Correct</i></span><span class="why"><b>She meets all three criteria.</b> A core clinical demyelinating event &#8212; brainstem and cerebellar deficits. A <b>clear positive MOG&#8209;IgG by cell&#8209;based assay on serum</b>, which needs no additional supporting features. And better diagnoses excluded (Banwell, et al. 2023).</span></span></li>
+        <li data-k="E" data-v="no"><i class="k">E</i><span><span class="hd2"><span class="nm">Sarcoidosis</span><i class="vc no"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3.4 3.4 10.6 10.6M10.6 3.4 3.4 10.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Ruled out</i></span><span class="why">Neurosarcoidosis can involve the brainstem, but it typically causes <b>meningeal enhancement, periventricular involvement or a diffuse granulomatous process</b>, none of which are on her MRI. It does not cause MOG&#8209;IgG positivity, and no systemic manifestations are reported (Ungprasert, et al. 2019).</span></span></li>
         </ul>
-        <p class="cta-row nextrow"><button class="btn" type="button" data-go="4">See why it gets missed <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></p>
+        <p class="cta-row nextrow"><button class="btn" type="button" data-go="4">See what settles it <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></p>
       </article>
       <article class="stage" id="s4" role="tabpanel" aria-labelledby="tab4">
         <p class="eyebrow">Case &#183; Evidence</p>
-        <h1>NPC is <em>frequently overlooked</em> or diagnosed late.</h1>
-        <p class="lede">Early symptoms look nonspecific and get attributed to isolated developmental
-          delay, hypotonia or motor difficulty. Hepatosplenomegaly may be subtle, missed on examination,
-          or not recognised as part of a broader neurovisceral disorder.</p>
+        <h1>Titres fall. <em>The clock was already running.</em></h1>
+        <p class="lede">Diagnosis requires three things (Banwell, et al. 2023): a core clinical
+          demyelinating event, a positive MOG&#8209;IgG by cell&#8209;based assay on serum, and the
+          exclusion of better diagnoses, including multiple sclerosis.</p>
         <ul class="ev-list">
-          <li><span class="rf">01</span><span><b>Visceral first, neurological later.</b> In infants and
-            young children NPC may present with developmental delay, hypotonia, splenomegaly,
-            hepatomegaly or prolonged neonatal jaundice <b>before</b> the more characteristic
-            neurological manifestations emerge.</span></li>
-          <li><span class="rf">02</span><span><b>The coexistence is the red flag.</b> Visceral disease
-            together with developmental abnormality or neurological symptoms should strongly prompt
-            consideration of NPC.</span></li>
-          <li><span class="rf">03</span><span><b>TCG over oxysterols.</b> TCG is highly sensitive for NPC
-            and more specific than oxysterols, being elevated primarily in NPC and acid
-            sphingomyelinase deficiency.</span></li>
-          <li><span class="rf">04</span><span><b>Then sequence, then refer.</b> Any patient with features
-            or biomarkers suggestive of NPC should undergo genetic testing of NPC&#8209;associated genes.
-            After confirmation, refer to a clinical geneticist or counsellor &#8212; <b>siblings may be
-            affected despite mild or unrecognised disease</b>.</span></li>
+          <li><span class="rf">01</span><span><b>A clear positive stands alone.</b> It requires no
+            additional supporting features. A <b>low positive</b> requires AQP4&#8209;IgG
+            seronegativity <i>and</i> at least one supporting clinical or MRI feature &#8212; as does a
+            positive without a reported titre (Banwell, et al. 2023).</span></li>
+          <li><span class="rf">02</span><span><b>Timing changes the answer.</b> Low&#8209;positive
+            results are more commonly associated with a longer time from onset to sampling. In a cohort
+            tested within 6 months of onset, titres declined progressively: <b>by 6 months about 25%
+            returned a low positive, and by 12 months 50% returned a negative</b> (Forcadela et al,
+            2023). Jane was sampled at about 8 months.</span></li>
+          <li><span class="rf">03</span><span><b>The childhood episode was the first attack.</b> Fever,
+            dysarthria, bilateral vision loss and unilateral weakness at 7, resolving with steroids,
+            points to an inflammatory demyelinating process &#8212; <b>and it had not been fully
+            explored at the time</b>.</span></li>
+          <li><span class="rf">04</span><span><b>Getting the name right is the treatment.</b> There are
+            <b>no FDA&#8209;approved therapies for MOGAD</b> (Redenbaugh V and Flanagan EP, 2022), and
+            relapse affects <b>up to 70% of patients</b> with longer follow&#8209;up (Trewin BP, et al,
+            2024). Delays lead to misdiagnosis, inappropriate treatment and prolonged progression
+            (Santoro, et al. 2023).</span></li>
         </ul>
-        <p class="cta-row"><a class="btn" href="https://ec.orakle.digital/search?q=Zevra" target="_blank" rel="noopener">Start case to claim your credit <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <p class="cta-row"><a class="btn" href="https://ec.orakle.digital/cases/cmd399vgevevq07vy0qqbwqre" target="_blank" rel="noopener">Start case <svg class="ar" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
       </article>
       </div>
     </div>
 
     <div class="col-b r" style="--n:3">
       <figure class="chartcard">
-        <figcaption class="lbl"><span>Diagnostic ledger &#183; Maya R.</span>
-          <em>what each investigation did to the differential</em></figcaption>
-        <ul class="ledger">
-      <li class="row r0">
-        <span class="tn">Baseline laboratory</span>
-        <span class="rs">Full blood count and lipid profile within range</span>
-        <span class="vc c-con">Consistent</span>
-      </li>
-      <li class="row r1">
-        <span class="tn">Liver function</span>
-        <span class="rs">ALT 37&#160;U/L and AST 63&#160;IU/L, mildly elevated</span>
-        <span class="vc c-con">Consistent</span>
-      </li>
-      <li class="row r2">
-        <span class="tn">Brain MRI</span>
-        <span class="rs">Normal &#183; no cerebellar atrophy</span>
-        <span class="vc c-out">Rules out</span>
-      </li>
-      <li class="row r3">
-        <span class="tn">Abdominal ultrasound</span>
-        <span class="rs">
-          <span class="ctl"><i class="cb" style="width:92%"></i><b>Liver</b><em>92nd</em></span>
-          <span class="ctl"><i class="cb" style="width:95%"></i><b>Spleen</b><em>95th</em></span>
-        </span>
-        <span class="vc c-con">Consistent</span>
-      </li>
-      <li class="row r4">
-        <span class="tn">Urinary GAGs</span>
-        <span class="rs">Normal &#183; mucopolysaccharidoses less likely</span>
-        <span class="vc c-out">Rules out</span>
-      </li>
-      <li class="row r5">
-        <span class="tn">Lysosomal enzymes</span>
-        <span class="rs">No deficiency identified</span>
-        <span class="vc c-out">Rules out</span>
-      </li>
-      <li class="row r6">
-        <span class="tn">Bile acid metabolites</span>
-        <span class="rs">TCG markedly elevated</span>
-        <span class="vc c-npc">Points to NPC</span>
-      </li>
-      <li class="row r7">
-        <span class="tn">Whole exome sequencing</span>
-        <span class="rs">Two pathogenic <i>NPC1</i> variants</span>
-        <span class="vc c-gen">Confirms</span>
-      </li>
-    </ul>
-        <div class="vh"><table><caption>Investigations ordered, results, and effect on the
-        differential diagnosis</caption>
-        <thead><tr><th scope="col">Investigation</th><th scope="col">Result</th>
-        <th scope="col">Effect</th></tr></thead><tbody>
-        <tr><td>Baseline laboratory investigations</td><td>Full blood count and lipid profile within range</td><td>Consistent</td></tr>
-        <tr><td>Liver function tests</td><td>ALT 37 U/L, AST 63 IU/L, mildly elevated</td><td>Consistent</td></tr>
-        <tr><td>Brain magnetic resonance imaging</td><td>Normal, no cerebellar atrophy</td><td>Rules out structural and neurodegenerative causes</td></tr>
-        <tr><td>Abdominal ultrasound</td><td>Liver 92nd centile, spleen 95th centile</td><td>Consistent</td></tr>
-        <tr><td>Urinary glycosaminoglycans</td><td>Normal</td><td>Rules out mucopolysaccharidoses</td></tr>
-        <tr><td>Lysosomal enzyme panel</td><td>No deficiency identified</td><td>Rules out other lysosomal storage disorders</td></tr>
-        <tr><td>Plasma bile acid metabolites</td><td>TCG markedly elevated</td><td>Points to Niemann-Pick disease type C</td></tr>
-        <tr><td>Whole exome sequencing</td><td>Two pathogenic NPC1 variants, p.Ala1035Val and p.Ile1061Thr</td><td>Confirms the diagnosis</td></tr>
-        </tbody></table></div>
+        <figcaption class="lbl"><span>Forty-four years &#183; Jane T</span>
+          <em>and the window the antibody test was still open in</em></figcaption>
+        <div class="px">
+      <p class="pxl l1">Jane&#8217;s clock <em>forty&#8209;four years, two episodes nobody joined up</em></p>
+      <ul class="tlnotes">
+        <li class="e-a"><i class="w">44 y ago</i><span>Age 7: fever, dysarthria, vision loss. Diagnosis of viral optic neuritis.</span></li>
+        <li class="e-b"><i class="w">8 mo ago</i><span>Fatigue, facial weakness, hearing loss needing aids.</span></li>
+        <li class="e-b"><i class="w">5 mo ago</i><span>CLIPPERS diagnosed. IV steroids, then relapse on tapering.</span></li>
+        <li class="e-b"><i class="w">1 mo ago</i><span>Leg weakness, ataxia, falls, dysarthria. IV steroids.</span></li>
+        <li class="e-c"><i class="w">Today</i><span>MOG&#8209;IgG clear positive 1:100. AQP4&#8209;IgG negative.</span></li>
+      </ul>
+      <p class="pxl l2">MOG&#8209;IgG titre <em>fixed cell&#8209;based assay</em></p>
+      <span class="ztrack"><i class="zn z1" style="left:0.0%;width:33.3%">Below 1:10</i><i class="zn z2" style="left:33.3%;width:33.3%">Low positive</i><i class="zn z3" style="left:66.6%;width:33.4%">Clear positive</i><i class="zmk" style="left:66.6%"></i></span>
+      <p class="zval"><b>1:100</b> <em>clear positive</em> <span>low positive is &#8805;1:10 and &lt;1:100</span></p>
+      <p class="pxl l2">Time from onset to sampling <em>titres fall (Forcadela et al, 2023)</em></p>
+      <span class="mtrack"><i class="mk m1" style="left:50.00%"></i><i class="mk m2" style="left:97.00%"></i><i class="mk jane" style="left:65.67%"></i><i class="mline" style="left:3.00%;width:94.00%"></i></span>
+      <span class="mlabs"><i class="ml m1" style="left:50.00%">~25% low positive</i><i class="ml m2" style="left:97.00%">50% negative</i><i class="ml jane" style="left:65.67%">Jane, 8 mo</i></span>
+      <span class="mtax"><i style="left:3.00%">Onset</i><i style="left:50.00%">6 mo</i><i style="left:97.00%">12 mo</i></span>
+    </div>
+        <div class="vh"><table><caption>Jane's clock, the MOG-IgG titre, and the effect of
+        sampling time</caption>
+        <thead><tr><th scope="col">When</th><th scope="col">What</th></tr></thead><tbody>
+        <tr><td>44 years ago, age 7</td><td>Fever, dysarthria, bilateral vision loss and right-sided
+          weakness. Diagnosed as optic neuritis secondary to viral infection; resolved with
+          steroids</td></tr>
+        <tr><td>243 days ago</td><td>Severe fatigue, left-sided facial weakness, bilateral
+          sensorineural hearing loss requiring hearing aids</td></tr>
+        <tr><td>152 days ago</td><td>Diagnosed with CLIPPERS; intravenous steroids for 5 days</td></tr>
+        <tr><td>30 days ago</td><td>Progressive leg weakness, right-sided appendicular ataxia, falls,
+          dysarthria; intravenous steroids for 4 days</td></tr>
+        <tr><td>Today</td><td>Serum MOG-IgG clear positive, titre 1:100 by cell-based assay; serum
+          AQP4-IgG negative</td></tr>
+        </tbody></table>
+        <p>On a fixed cell-based assay, clear positive is a titre of 1:100 or above and low positive
+        is at least 1:10 and less than 1:100. In a cohort tested within 6 months of onset, titres
+        declined progressively: by 6 months about 25% of patients returned a low-positive result, and
+        by 12 months 50% returned a negative result. Jane was sampled about 8 months after
+        onset.</p></div>
       </figure>
       <dl class="readout">
-        <div><dt id="l1">Age</dt><dd><span id="r1">4</span> <small id="u1">years</small></dd></div>
-        <div><dt id="l2">Weight</dt><dd><span id="r2">16</span> <small id="u2">kg</small></dd></div>
-        <div><dt id="l3">Height</dt><dd><span id="r3">102</span> <small id="u3">cm</small></dd></div>
-        <div><dt id="l4">BMI</dt><dd><span id="r4">15.4</span> <small id="u4"></small></dd></div>
+        <div><dt id="l1">Age</dt><dd><span id="r1">51</span> <small id="u1">years</small></dd></div>
+        <div><dt id="l2">Weight</dt><dd><span id="r2">65.8</span> <small id="u2">kg</small></dd></div>
+        <div><dt id="l3">Height</dt><dd><span id="r3">167</span> <small id="u3">cm</small></dd></div>
+        <div><dt id="l4">BMI</dt><dd><span id="r4">23.6</span> <small id="u4"></small></dd></div>
       </dl>
     </div>
   </main>
 
   <footer class="legal r" style="--n:4">
-    <div style="grid-column:1 / span 8"><details><summary>Accreditation and credit</summary><div>
-  <p>In support of improving patient care, this activity has been planned and implemented by
-  <b>AKH Inc., Advancing Knowledge in Healthcare</b> and <b>Orakle LLC</b>. AKH Inc., Advancing
-  Knowledge in Healthcare is jointly accredited by the Accreditation Council for Continuing Medical
-  Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses
-  Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>
-  <p><b>Physicians.</b> AKH Inc., Advancing Knowledge in Healthcare designates this enduring for a
-  maximum of <b>1.00</b> AMA PRA Category 1 Credit(s)&#8482;. Physicians should claim only the credit
-  commensurate with the extent of their participation in the activity.</p>
-  <p><b>Target audience.</b> This activity is designed for an audience of Physicians.
-  <b>Release date</b> August 29, 2026. <b>Expiration date</b> August 29, 2027.</p>
-  <p><b>Criteria for success.</b> To obtain a certificate of completion, a score of 70% or better on
-  the post&#8209;test is required. You must participate in the entire activity to receive credit.
-  There is no fee to participate. Questions:
-  <a href="mailto:ketrea@akhcme.com">ketrea@akhcme.com</a>.</p>
-  <p><b>Credit claim.</b> Click the claim link, then log in or create an account (all first&#8209;time
-  users must create an account). The course appears in your <i>Pending Activities</i> list under the
-  <i>Activities</i> tab on your profile page. Proceed to the Register / Take Course tab to complete the
-  course evaluation and certificate steps, then click get started.
-  <a href="https://akhcme.com/content/detection-and-diagnosis-niemann-pick-type-c" target="_blank" rel="noopener">Claim link</a></p></div></details></div>
-    <div style="grid-column:10 / span 8"><details><summary>Learning objectives</summary><div>
-  <p>This case&#8209;based educational program is designed to improve clinician competence in the early
-  recognition and diagnosis of Niemann&#8211;Pick disease type C (NPC). Through two interactive virtual
-  patient simulations based on real&#8209;world diagnostic scenarios, participants will learn to identify
-  age&#8209;dependent clinical red flags, differentiate NPC from common neurologic and psychiatric
-  mimics, apply contemporary diagnostic pathways, interpret biomarker and genetic testing results, and
-  recognize the diagnostic significance of ocular motor abnormalities such as vertical supranuclear
-  saccade palsy.</p>
-  <p>Upon completion of the educational activity, participants should be able to:</p>
-  <ul>
-   <li>Recognize age&#8209;dependent NPC red flags in early childhood, including unexplained
-     splenomegaly, developmental concerns, progressive gait or coordination changes, and
-     cataplexy&#8209;like events</li>
-   <li>Differentiate NPC from common pediatric mimics</li>
-   <li>Apply current diagnostic pathways for suspected pediatric NPC, including appropriate selection
-     and sequencing of biomarker testing and confirmatory genetic evaluation to reduce time to
-     diagnosis</li>
-   <li>Evaluate and interpret challenging diagnostic results in pediatric NPC</li>
-   <li>Implement practice changes to enable earlier identification and referral, including when to
-     escalate testing, coordinate multidisciplinary evaluation, and initiate longitudinal monitoring to
-     improve outcomes</li>
-   <li>Recognize the diagnostic significance of ocular motor abnormalities and understand when their
-     presence should prompt NPC evaluation</li>
-  </ul></div></details></div>
-    <div style="grid-column:19 / span 8"><details><summary>Faculty, disclosures and disclaimer</summary><div>
-  <p><b>Faculty.</b> Barbara Burton MD &#8212; speaker: Biomarin, Zevra; consultant: Alltrna, Applied
-  Therapeutics, Chiesi, Denali, JCR Pharma, Moderna, Ultragenyx, Uniqure. Caroline Hastings MD &#8212;
-  consultant: Azafaros, Zevra, IntraBio, Cyclo Therapeutics. Dorothy Caputo, MA, BSN, RN &#8212;
-  President; Rebecca Lakowski, RN (planner/reviewer); AKH Inc. staff and planners; Orakle LLC staff and
-  planners &#8212; nothing to disclose.
-  <b>All of the relevant financial relationships listed for these individuals have been mitigated.</b></p>
-  <p><b>Commercial support.</b> This activity is supported from an independent medical education grant
-  from Zevra Therapeutics.</p>
-  <p>It is the policy of AKH Inc. to ensure independence, balance, objectivity, scientific rigor, and
-  integrity in all of its continuing education activities. Identified conflicts of interest are
-  mitigated by AKH prior to accreditation of the activity. AKH planners and reviewers have no relevant
-  financial relationships to disclose.</p>
-  <p><b>Unlabeled use.</b> This educational activity may include discussion of uses of agents that are
-  investigational and/or unapproved by the FDA. Please refer to the official prescribing information
-  for each product for discussion of approved indications, contraindications, and warnings.</p>
-  <p><b>Disclaimer.</b> This course is designed solely to provide the healthcare professional with
-  information to assist in his/her practice and professional development and is not to be considered a
-  diagnostic tool to replace professional advice or treatment. The course serves as a general guide to
-  the healthcare professional, and therefore, cannot be considered as giving legal, nursing, medical, or
-  other professional advice in specific cases. AKH Inc. specifically disclaim responsibility for any
-  adverse consequences resulting directly or indirectly from information in the course, for undetected
-  error, or through participants misunderstanding of the content. If you would like to opt out from
-  future communications from AKH please send an email to
-  <a href="mailto:optout@akhcme.com">optout@akhcme.com</a> with your information with
-  &#8220;Opt Out&#8221; in the subject line.</p></div></details></div>
+    <div style="grid-column:1 / span 8"><details><summary>Funding and disclaimer</summary><div>
+  <p>This case study was developed with the assistance of <b>Prof. Sara Mariotto, MD, PhD</b>,
+  Department of Neuroscience, Biomedicine, and Movement Sciences, University of Verona, Italy. This
+  case study has been <b>initiated and funded by UCB</b>. All responses are anonymous to UCB.</p>
+  <p><b>This is not an adverse event reporting site.</b> To report an adverse event to UCB, please
+  contact <a href="https://www.ucb.com/UCBCares" target="_blank" rel="noopener">UCBCares.com</a>.</p>
+  <p>The information is not intended as medical advice. Responsibility for patient care resides with
+  the healthcare professional on the basis of his or her professional license, experience, and
+  knowledge of the individual patient.</p>
+  <p>All characters and events depicted in this patient case simulation are entirely fictitious. Any
+  similarity to actual events or persons, living or dead, is purely coincidental.</p>
+  </div></details></div>
+    <div style="grid-column:10 / span 8"><details><summary>About this case</summary><div>
+  <p><b>Case&#8209;based Learning Module: Myelin Oligodendrocyte Antibody&#8209;associated
+  Disease.</b> Unraveling the cause of relapsing neurological symptoms in a 51&#8209;year&#8209;old
+  female patient.</p>
+  <p><b>Faculty.</b> Tania A Reyna, MD, MSCS, FAAN. <b>Supporter.</b> UCB.
+  <b>Specialties.</b> Neurology; pediatric neurology and ophthalmology; internal medicine.</p>
+  <p><b>Why it matters.</b> MOG&#8209;IgG was discovered in 2007, and MOGAD has been underdiagnosed
+  because widespread testing arrived late. European studies suggest an incidence of
+  1.6&#8211;3.4 per million person&#8209;years, with no significant sex disparity and a median onset
+  age of 20&#8211;30 years, though it can affect people of all ages.</p></div></details></div>
+    <div style="grid-column:19 / span 8"><details><summary>References</summary><div>
+  <p>Banwell B, Bennett JL, Marignier R, et al. Diagnosis of myelin oligodendrocyte glycoprotein
+  antibody&#8209;associated disease: International MOGAD Panel proposed criteria. <i>Lancet Neurol.</i>
+  2023;22(3):268&#8211;82. &#183; Flanagan EP, Tillema JM, Gonz&#225;lez&#8209;Scarano F, Tung GA.
+  Myelin oligodendrocyte glycoprotein antibody&#8209;associated disease (MOGAD): clinical features and
+  diagnosis. UpToDate; 2024. &#183; Forcadela M, Rocchi C, San Martin D, et al. Timing of
+  MOG&#8209;IgG testing is key to 2023 MOGAD diagnostic criteria. <i>Neurol Neuroimmunol
+  Neuroinflamm.</i> 2023;11(1):e200183. &#183; Jarius S, Paul F, Aktas O, et al. MOG
+  encephalomyelitis: international recommendations on diagnosis and antibody testing.
+  <i>J Neuroinflammation.</i> 2018;15(1):134. &#183; Molazadeh N, Bose G, Lotan I, et al. Autoimmune
+  diseases and cancers overlapping with MOGAD: a systematic review. <i>Mult Scler J Exp Transl
+  Clin.</i> 2022;8(4):205521732211281. &#183; Redenbaugh V, Flanagan EP. Monoclonal antibody therapies
+  beyond complement for NMOSD and MOGAD. <i>Neurotherapeutics.</i> 2022;19(3):808&#8211;22. &#183;
+  Santoro JD, Gould J, Panahloo Z, et al. Patient pathway to diagnosis of MOGAD: findings from a
+  multinational survey of 204 patients. <i>Neurol Ther.</i> 2023;12(4):1081&#8211;101. &#183; Teru SS,
+  Dogiparthi J, Bonitz TJ, et al. MOGAD: a case report. <i>Cureus.</i> 2024;16(3):e55652. &#183;
+  Tobin WO, Guo Y, Krecke KN, et al. Diagnostic criteria for CLIPPERS. <i>Brain.</i>
+  2017;140(9):2415&#8211;25. &#183; Trewin BP, Dale RC, Qiu J, et al. Oral corticosteroid dosage and
+  taper duration at onset in MOGAD influences time to first relapse. <i>J Neurol Neurosurg
+  Psychiatry.</i> 2024;95(11):1054&#8211;63. &#183; Ungprasert P, Ryu JH, Matteson EL. Clinical
+  manifestations, diagnosis, and treatment of sarcoidosis.
+  <i>Mayo Clin Proc Innov Qual Outcomes.</i> 2019;3(3):358&#8211;75.</p></div></details></div>
     <p class="stamp"><span>&#169; 2026 Orakle LLC</span>
-      <span>Supported by an independent medical education grant from Zevra Therapeutics.</span>
-      <span>Released 29 August 2026 &#183; expires 29 August 2027</span></p>
+      <span>Initiated and funded by UCB &#183; all responses anonymous to UCB</span>
+      <span>Not an adverse event reporting site</span></p>
   </footer>
 
 </div>
@@ -670,20 +662,19 @@ html:not(.js) .shell{min-height:0;grid-template-rows:none}
 <script>
   var S=[
     {n:'Presentation',g:-13,
-      l:['Age','Weight','Height','BMI'],v:['4','16','102','15.4'],u:['years','kg','cm',''],txt:[0,0,0,0]},
+      l:['Age','Weight','Height','BMI'],v:['51','65.8','167','23.6'],u:['years','kg','cm',''],txt:[0,0,0,0]},
     {n:'Workup',g:-6,
-      l:['TCG','<i>NPC1</i> variants','Brain MRI','Urinary GAGs'],
-      v:['Elevated','2','Normal','Normal'],u:['markedly','pathogenic','',''],txt:[1,0,1,1]},
+      l:['MOG&#8209;IgG 1:100','AQP4&#8209;IgG','CSF bands','From onset'],
+      v:['Clear positive','Negative','Absent','8'],u:['','','','months'],txt:[1,1,1,0]},
     {n:'Decision',g:0,
-      l:['TCG','<i>NPC1</i> variants','Brain MRI','Urinary GAGs'],
-      v:['Elevated','2','Normal','Normal'],u:['markedly','pathogenic','',''],txt:[1,0,1,1]},
+      l:['MOG&#8209;IgG 1:100','AQP4&#8209;IgG','CSF bands','From onset'],
+      v:['Clear positive','Negative','Absent','8'],u:['','','','months'],txt:[1,1,1,0]},
     {n:'Verdict',g:6,
-      l:['TCG','<i>NPC1</i> variants','Brain MRI','Urinary GAGs'],
-      v:['Elevated','2','Normal','Normal'],u:['markedly','pathogenic','',''],txt:[1,0,1,1]},
+      l:['MOG&#8209;IgG 1:100','AQP4&#8209;IgG','CSF bands','From onset'],
+      v:['Clear positive','Negative','Absent','8'],u:['','','','months'],txt:[1,1,1,0]},
     {n:'Evidence',g:13,
-      l:['Variant 1','Variant 2','Spleen','Walked at'],
-      v:['p.Ala1035Val','p.Ile1061Thr','95th','20'],u:['c.3104C&gt;T','c.3182T&gt;C','centile','months'],
-      txt:[1,1,0,0]}
+      l:['Low positive','Negative','Relapse risk','Approved drugs'],
+      v:['25','50','70','0'],u:['% at 6 mo','% at 12 mo','% of cases','for MOGAD'],txt:[0,0,0,0]}
   ];
 
 (function(){
